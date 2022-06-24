@@ -1,0 +1,224 @@
+---
+en:
+  acceptances:
+    new:
+      sign_in_to_join_the_team: Please sign in to join the %{team_name} team
+      invitation_taken: That invitation is already taken
+  admin:
+    actions:
+      mentees:
+        breadcrumb: Mentees
+        menu: Mentees
+        title: Mentees
+    misc:
+      filter_date_format: '%D'
+  attempts:
+    flashcard_removed_from_review_queue: Flashcard removed from review queue
+    flashcard_saved: Saved flashcard for review
+  authenticating:
+    github_signin: Sign in with GitHub
+    login_required: You must be signed in to view that page
+    auth_to_access_success: "Success! Enjoy your free videos."
+  completeables:
+    statuses:
+      complete: Complete
+      in-progress: In Progress
+      next-up: Next Up
+      unstarted: Unstarted
+  deck-title-teaser: 'From: %{title}'
+  decks:
+    deck:
+      number_of_flashcards: '%{length} flashcards'
+    index:
+      feature_description: Flashcards are short quizzes with questions and answers
+        provided. They're mobile-friendly, and a perfect fit for commutes, waiting
+        rooms, and coffee breaks. They cover the bite-sized topics, code smells, patterns,
+        and anti-patterns that experts know and intermediates ought to learn.
+      subhead: Become a better programmer, even if you've only got five minutes.
+      title: Flashcards
+    auth_to_access_cta: We hope you're enjoying these flashcard decks. Ready to dive in to all the other great content?
+    auth_to_access_link: Sign In with GitHub for Free Access
+  exercist_trails:
+    show:
+      no_trail: No trail found for the exercise.
+  flashcards:
+    hidden_answer:
+      next-flashcard: next flashcard
+      next-flashcard_html: next flashcard &rarr;
+      reveal-answer: Reveal Answer
+      save-for-review: Save for review
+      save-for-review_html: Save for review &rarr;
+    needing_review:
+      blank-state-explanation: If you encounter a card that you want to return to
+        (like if its answer has interesting links that you'd like to read later),
+        just click "%{save_for_review_text}" and it will appear here.
+      review-queue: Saved Flashcards
+    show:
+      answer: 'Answer:'
+      next-flashcard: Next Flashcard
+      numbered-title: Flashcard %{position} of %{total}
+      return-to-results: Return to Flashcard Results
+  footer:
+    contact_us: Contact us
+  formtastic:
+    labels:
+      acceptance:
+        github_username: GitHub username
+  github_logo: GitHub
+  layouts:
+    app_name: Upcase
+    fallback_page_title: Upcase by thoughtbot | Learn Web Development Online
+    marketing:
+      description: Join Upcase by thoughtbot. Explore video tutorials,
+        exercises, forum discussions and the community you need to grow as a web
+        developer.
+    thoughtbot: thoughtbot
+  licenses:
+    flashes:
+      error: You're already subscribed to Upcase!
+      success: Success! Enjoy your shiny new product.
+  pages:
+    landing:
+      content:
+        heading: Choose from a variety of languages and tools.
+        body_html: <mark>Our trails are intermediate and advanced.</mark> Learn
+          from experienced developers and move from beginner to proficient at a
+          steady and sustainable pace.
+      have_a_team: Have a team?
+      hero_call_to_action: Start Learning Today!
+      hero_tagline: Upcase by thoughtbot
+      hero_uvp_html: <strong>We're not a bootcamp, we're a finishing school.</strong>
+        Become an experienced developer and take "junior" out of your title.
+      language_flash: Thanks for signing up. We will be in touch!
+      page_title: Upcase by thoughtbot | Learn Web Development Online
+      page_title_mobile: Upcase by thoughtbot | Learn Web Development from
+        Anywhere
+    welcome:
+      complete-welcome: Dismiss this page (for now)
+      headline: Read this to write better code.
+      post-welcome-message: All content unlocked. Enjoy!
+
+  practice:
+    decks:
+      decks-list-title: decks
+    show:
+      trail_description: These are trails, the perfect thing to tackle on a
+        Saturday or a wide-open evening when you're ready to write some code or
+        watch longer videos.
+
+  products:
+    locked:
+      available_for_free_after_authing: Sign In with GitHub for Free Access
+      get_access_by_joining: Get access by joining Upcase
+  repository:
+    view_repository: View this Repository
+  results:
+    flashcard:
+      saved_for_review: Saved for review
+    show:
+      back-to-all-decks: return to all decks
+      complete: 'Great job! You completed:'
+      explanation: Click any flashcard to review it
+      title: '%{title}'
+  searches:
+    show:
+      flashcard_legend_text: Flashcard
+      flashcard_legend_text: Flashcard
+      keywords_title: Search by keyword
+      legend_title: Legend
+      no_results: No results found for
+      placeholder: 'Ex. "Form Objects"'
+      results_title: Search Results
+      submit: Search
+      tagline: Explore our content by topic or search for a specific keyword.
+      title: Search
+      topics_title: Browse by topic
+      trail_legend_text: Trail
+      trail_legend_title: Trail
+      video_legend_text: Video
+      video_legend_title: Video
+  shared:
+    header:
+      about_us: About Us
+      content: Content
+      flashcards: Flashcards
+      forum: Forum
+      help-link: Help
+      tagline: Learn with thoughtbot
+      teams: Teams
+      search: Search
+      sign_in: Sign In
+      sign_out: Sign Out
+      trails: Trails
+      weekly_iteration: Weekly Iteration
+    subscription:
+      name: Upcase
+    subscriptions:
+      icon: ✶
+      multi_user: Team Membership
+      single_user: Join Upcase
+    upcase: Upcase
+    content_meta_description: "Explore thoughtbot's video tutorials, exercises,
+      and forum discussions on %{name}"
+  show:
+    weekly_iteration_cta: This video is a preview of all the great content in
+      the Weekly Iteration. Scroll down to see some of the great videos. Want to
+      watch them all?
+  teams:
+    join_cta: Get your team started today
+    team:
+      team_owner_html: Your team owner, %{owner_email}, can make changes to your subscription.
+  teachers:
+    teacher:
+      header: Taught by
+  topics:
+    index:
+      view_products: View all thoughtbot products
+    product:
+      headings:
+        video: Video
+    promoted_product:
+      video:
+        action: Watch
+      video_tutorial:
+        action: Register
+    trail_map:
+      resources: Resources
+      validations: You should be able to
+    video_tutorial:
+      heading:
+        online: Online video tutorial
+  trails:
+    sign_up_cta: Join Upcase for free to keep track of your progress and start leveling up.
+    sign_up_link: Sign Up Now
+    start_for_free: Start Course for Free by Signing In with GitHub
+    other_resources: Use these resources for reference and additional practice
+    thoughtbot_resources: Use these thoughtbot resources first
+    validations: '%{name} developers should be able to'
+    start_trail: Start trail
+    visit_trail: Visit trail
+    subscribe: Subscribe
+    promoted_message: "🎉 Check out our newest trail, hot off the presses!"
+  users:
+    flashes:
+      update:
+        success: Your profile has been updated.
+    edit:
+      have_any_questions: Have any questions?
+      here_to_help: We're here to help, so feel free to send any questions in and we'll get back to you right away.
+      contact_us: Contact us
+  videos:
+    show:
+      mark-as-complete: Mark as Complete
+      auth_to_access_without_preview_callout_text: Want to see the full-length video right now for free?
+      auth_to_access_button_text: Sign In with GitHub for Free Access
+    seek_buttons:
+      jump-to-topic-in-video: Jump to Topic In Video
+  watchables:
+    preview:
+      auth_to_access_button_text: Sign In with GitHub for Free Access
+  dynamic_page_titles:
+    show: "%{name} | Video Lessons by thoughtbot"
+    topic: "Learn %{name} | Online Courses by thoughtbot"
+    trail: "%{name} | Online Tutorial by thoughtbot"
+    video: "%{name} | Online Video Tutorial by thoughtbot"

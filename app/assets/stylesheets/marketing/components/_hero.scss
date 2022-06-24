@@ -1,0 +1,51 @@
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  padding: ($base-spacing + $site-header-height) $small-spacing $x-large-spacing;
+  position: relative;
+
+  @media (min-width: $medium-screen) {
+    min-height: 680px;
+    padding-top: $base-spacing;
+  }
+}
+
+.hero__tagline {
+  color: $color-gray-darkest;
+  font-family: $title-font-family;
+  font-size: 1.4rem;
+  margin: $base-spacing 0;
+  text-align: center;
+  transition: font-size $base-duration;
+
+  @media (min-width: $small-screen) {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: $medium-screen) {
+    font-size: 3rem;
+  }
+}
+
+.hero__uvp {
+  color: rgba($color-gray-darkest, 0.65);
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 1.2;
+  margin-bottom: $large-spacing;
+  max-width: 320px;
+  text-align: center;
+  transition: font-size $base-duration;
+
+  strong {
+    color: rgba($color-gray-darkest, 0.9);
+  }
+
+  @media (min-width: $medium-screen) {
+    font-size: 1.45rem;
+    max-width: $reading-width;
+  }
+}

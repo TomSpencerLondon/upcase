@@ -1,0 +1,30 @@
+.page-section {
+  position: relative;
+}
+
+.page-section--dark {
+  background-color: $color-blue-lightest;
+  border-bottom: $base-border;
+  border-top: $base-border;
+}
+
+.page-section--split {
+  @media (min-width: $medium-screen) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.page-section--split__column {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $medium-screen) {
+    width: 50%;
+  }
+
+  &:last-child {
+    background-color: darken($upcase-light-blue, 0.5%);
+    border-left: $base-border;
+  }
+}

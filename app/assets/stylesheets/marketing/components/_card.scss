@@ -1,0 +1,88 @@
+.card {
+  background-color: $white;
+  border: 1px solid rgba($blue, 0.075);
+  border-radius: $base-border-radius;
+  box-shadow: 0 0.5rem 2.5rem rgba($havelock-blue, 0.15);
+  overflow: auto;
+}
+
+.card--narrow {
+  margin: 0 auto;
+  max-width: $max-width-narrower;
+}
+
+.card--one-per-line {
+  margin: 0 auto $medium-spacing;
+  max-width: $medium-screen;
+}
+
+.card--two-per-line {
+  display: inline-block;
+  margin-bottom: $base-spacing;
+
+  @media (min-width: $medium-screen) {
+    margin: $base-spacing $base-spacing $large-spacing;
+    width: calc(49% - #{$base-spacing * 2});
+  }
+}
+
+.card__content {
+  padding: $medium-spacing;
+}
+
+.card__content--dark {
+  background: $blue;
+  color: $white;
+}
+
+.card__content--halves {
+  @include border-bottom-radius($base-border-radius);
+  background: $color-red;
+  color: $color-gray-darkest;
+  overflow: hidden;
+  padding: 0;
+
+  @media (min-width: $medium-screen) {
+    display: flex;
+  }
+
+  > .card__content {
+    @media (min-width: $medium-screen) {
+      width: 50%;
+    }
+  }
+
+  .card__content:nth-child(even) {
+    background: #FAFBFD;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  ul {
+    color: $color-gray-light;
+    font-size: $small-font-size;
+    line-height: 1.4;
+    margin: $base-spacing 0;
+  }
+}
+
+.card__heading {
+  color: $color-red;
+  display: block;
+  font-family: $heading-font-family;
+  font-size: $medium-font-size;
+  font-weight: normal;
+  margin-bottom: $base-spacing;
+}
+
+.card__copy {
+  color: $light-font-color;
+  max-width: $reading-width;
+}
+
+.card__copy--centered {
+  margin: 0 auto;
+  text-align: center;
+}

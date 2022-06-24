@@ -1,0 +1,15 @@
+.flash {
+  align-items: center;
+  display: flex;
+  font-family: $strong-font-family;
+  justify-content: center;
+  min-height: $site-header-height;
+  text-align: center;
+  width: 100%;
+
+  &.notice {
+    background-color: $notice-color;
+    border-bottom: solid 1px darken($notice-color, 25%);
+    color: mix($notice-color, $black, 50%);
+  }
+}

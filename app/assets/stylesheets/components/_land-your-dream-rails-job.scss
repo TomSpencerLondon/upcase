@@ -1,0 +1,17 @@
+.land-dream-rails-job {
+  @include span-columns(10);
+  @include shift(1);
+
+  h3 {
+    margin-top: 0.5em;
+  }
+
+  ol {
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+
+  form {
+    margin-bottom: 0.5em;
+  }
+}

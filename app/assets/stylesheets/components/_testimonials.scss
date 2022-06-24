@@ -1,0 +1,200 @@
+.testimonials {
+  background-color: $upcase-blue;
+  padding: 5em 2em 3em;
+  position: relative;
+
+  figure {
+    img {
+      @include size(160px);
+      border-radius: 50%;
+      margin-bottom: 0.875em;
+    }
+  }
+
+  h2 {
+    $testimonials-padding: 75px 0;
+    color: $off-white;
+    padding: $testimonials-padding;
+    text-align: center;
+  }
+
+  figure > p {
+    color: $off-white;
+    line-height: 1.3;
+    font-family: $sans-serif;
+    font-weight: 800;
+  }
+
+  .feature-quote {
+    @include outer-container;
+    margin-bottom: 72px;
+
+    figure {
+      @include span-columns(3);
+      text-align: center;
+      font-size: 120%;
+    }
+
+    blockquote {
+      @include span-columns(9);
+      @include omega();
+
+      position: relative;
+      border: 1px solid $quote-outline-blue;
+      background-color: $off-white;
+      border-radius: 0.75em;
+      padding: 45px;
+      margin: 0;
+      z-index: 0;
+
+      &:before {
+        @include triangle(left, 42px, 42px, $off-white);
+
+        content: "";
+        position: absolute;
+        left: -21px;
+        top: 15%;
+        z-index: 2;
+      }
+
+      &:after {
+        @include triangle(left, 42px, 42px, $quote-outline-blue);
+
+        content: "";
+        position: absolute;
+        left: -22px;
+        top: 15%;
+        z-index: 1;
+      }
+
+      p {
+        color: $celestial-blue;
+        font-size: 1.15rem;
+        font-style: italic;
+        position: relative;
+        padding-left: 1.875em;
+
+        &:before {
+          @include size(11px);
+          padding: 11px 16px 11px 6px;
+          color: $off-white;
+          content: "“";
+          border-radius: 50%;
+          background-color: $upcase-green;
+          font-family: $sans-serif;
+          font-size: 2em;
+          position: absolute;
+          left: -3%;
+        }
+      }
+    }
+  }
+
+  .quotee {
+    strong {
+      color: #0053b3;
+      display: block;
+      font-size: 0.8125em;
+      font-weight: 700;
+      letter-spacing: 0.0625em;
+      text-transform: uppercase;
+    }
+  }
+
+  .supporting-quotes {
+    @include outer-container;
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      @include size(70px);
+      float: left;
+      display: inline-block;
+      margin-right: 24px;
+      margin-bottom: 30px;
+    }
+
+    .supporting-quote {
+      flex-basis: 12em;
+      flex-grow: 1;
+      flex-shrink: 0;
+      margin: 0 1em 50px;
+
+      // @include marketing-fullsize {
+        // @include span-columns(4);
+      // }
+
+      figure {
+        background-color: $upcase-blue;
+        margin-bottom: 2.25em;
+
+        p {
+          padding: 1em 0;
+        }
+      }
+
+      blockquote {
+        background-color: $quote-background-blue;
+        border: 1px solid $quote-outline-blue;
+        border-radius: 0.75em;
+        padding: 30px;
+        margin: 0;
+        position: relative;
+        z-index: 0;
+
+        strong {
+          color: $yellow;
+          display: inline;
+        }
+
+        &:before {
+          @include triangle(up, 26px, 26px, $quote-background-blue);
+
+          content: "";
+          position: absolute;
+          left: 20px;
+          top: -13px;
+          z-index: 2;
+        }
+
+        &:after {
+          @include triangle(up, 26px, 26px, $quote-outline-blue);
+
+          content: "";
+          position: absolute;
+          left: 20px;
+          top: -14px;
+          z-index: 1;
+        }
+
+        p {
+          color: white;
+          font-size: $font-size-small;
+          font-style: italic;
+          line-height: 1.55;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  strong {
+    color: darken($celestial-blue, 20%);
+    display: inline;
+  }
+}
+
+.testimonial-image img {
+  display: block;
+  height: 220px;
+  margin: 0 auto 1em;
+
+  @include marketing-fullsize {
+    float: left;
+    margin-right: 2em;
+  }
+}
+
+.testimonial-quote {
+  text-align: left;
+}

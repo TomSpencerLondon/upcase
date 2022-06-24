@@ -1,0 +1,18 @@
+.environment-banner {
+  @include position(fixed, null null 0 0);
+  font-size: 0.8em;
+  text-align: center;
+  z-index: 99;
+
+  $dev-green: #008000;
+
+  &.development {
+    background: lighten($dev-green, 10%);
+    color: lighten($dev-green, 70%);
+  }
+
+  &.staging {
+    background: lighten($upcase-red, 10%);
+    color: lighten($upcase-red, 70%);
+  }
+}

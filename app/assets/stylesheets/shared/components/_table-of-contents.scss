@@ -1,0 +1,33 @@
+.table-of-contents {
+  @include position(fixed, $site-header-height 0 0 0);
+  background-color: $white;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  padding: $spacing-medium;
+  transform: translateY(-120%);
+  transition: transform 250ms;
+  z-index: $z-table-of-contents;
+
+  @media (min-width: $large-screen) {
+    padding: $spacing-medium $spacing-base;
+  }
+
+  &.slide-down {
+    transform: translateY(0%);
+  }
+}
+
+.table-of-contents__inner-container {
+  margin: $spacing-base auto;
+  max-width: $large-screen;
+}
+
+.table-of-contents__close {
+  @include position(absolute, 1rem 1rem null null);
+  cursor: pointer;
+  font-size: 2em;
+
+  @media (min-width: $large-screen) {
+    display: none;
+  }
+}

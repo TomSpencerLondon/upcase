@@ -1,0 +1,172 @@
+// Colors
+$alert-color: #ffdfdf;
+$blue-trail: #4a90e2;
+$celestial-blue: #4a90e2;
+$cta-color-dark: #fb0;
+$cta-color-light: #ff0;
+$cta-text-color: #333;
+$dark-brown: #5c4a33;
+$darkwarmgray: #555;
+$exercise-color: #9cc0ed;
+$gold-trail: #f5a623;
+$gray-1: #333;
+$gray-2: #666;
+$gray-3: #999;
+$gray-4: #ddd;
+$gray-5: #f3f3f3;
+$hero-green: #4dd1aa;
+$landing-purple-border: #6a5b7d;
+$landing-purple: #341642;
+$light-brown: #eddaa5;
+$light-yellow: #fff5c2;
+$lightwarmgray: #f5f5f0;
+$melon: #f8bcba;
+$off-white: #fbfbfb;
+$quote-outline-blue: #1c6cc9;
+$quote-background-blue: #2879d6;
+$red: #ad141e;
+$repository-color: #8d70c3;
+$search-snippet-border: #abd2f4;
+$thoughtbot-red: #ad141e;
+$upcase-blue-1: #487bf6;
+$upcase-blue-2: #0093cb;
+$upcase-blue: #2387e0;
+$upcase-darkred: #600;
+$upcase-green: $hero-green;
+$upcase-red: #ff4856;
+$video-tutorial-color: #ff633c;
+$warmgray: #d9d4cc;
+$weekly-iteration-color: #9c313e;
+$yellow: #f3e86b;
+
+// Colors in action
+$base-background-1: $white;
+$base-background-2: #fafafa;
+$code-block-brackground: #f7f7f7;
+$flashcard-background: #fff;
+$flashcard-border-color: lighten($gray-4, 5%);
+$flashcard-hover-color: $gray-4;
+$footer-background: rgba(46, 48, 58, 0.96);
+$footer-link-color: #7a7a7a;
+$inline-code-background: hsla(0, 0, 0, 0.07);
+$not-started-dot-color: #d8d8d8;
+$row-highlight: #f9f9f9;
+$topic-backgrounds: (
+  analytics: #efffb3,
+  clean-code: #e5feff,
+  clojure: #ffd3bc,
+  design: #e8e9ff,
+  foundations: #daffcb,
+  haskell: #ffe7fd,
+  ios: #d7ecff,
+  javascript: #ffe8ca,
+  rails: #ffecee,
+  testing: #e5fdf4,
+  vim: #e1f5ff,
+  workflow: #fcf5c8
+);
+$topic-colors: (
+  analytics: #a5c236,
+  clean-code: #1dc8cf,
+  clojure: #ed6820,
+  design: #2b2f8e,
+  foundations: #77c159,
+  haskell: #cd6fc6,
+  ios: #396189,
+  javascript: #d87d2f,
+  rails: #d5414d,
+  testing: #34d096,
+  vim: #2192cf,
+  workflow: #f4bc15
+);
+
+// Font families
+$sans-serif: "proxima-nova-1", "proxima-nova-2", "museo-sans-1", "museo-sans-2", helvetica neue, sans-serif;
+$serif: "adelle-1", "adelle-2", $font-stack-helvetica;
+
+// Font weights
+$sans-serif-semibold: 600;
+
+// Font sizes
+$font-size-smallest: 0.75rem;
+$font-size-small: 0.96rem;
+
+// Line height
+$base-line-height: 1em;
+$medium-line-height: $base-line-height * 1.5;
+
+// Letter spacing
+$base-letter-spacing: 2px;
+
+// Borders
+$base-border-color-1: #dcdcdc;
+$base-border-color-blue: #e9f2fd;
+$base-border-color-yellow: lighten($cta-color-dark, 30%);
+$flashcard-border: 2px solid $flashcard-border-color;
+$light-gray-border: #ccc;
+
+// Spacing
+$base-spacing: 1em;
+$small-spacing: $base-spacing / 2;
+$medium-spacing: $base-spacing * 2;
+$large-spacing: $base-spacing * 3.75;
+$x-large-spacing: $base-spacing * 5;
+
+// Padding
+$side-padding: 1em;
+
+// Component specific
+$arrow-size: 20px;
+$button-padding-small: 0.45em 1em;
+$button-padding: 0.75em 1.2em;
+$card-height: 370px;
+$card-padding: 30px;
+$card-width: 14rem;
+$dot-margin: 14px;
+$dot-size: 13px;
+$flashcard-radius: 5px;
+$flashcard-spacing: 2em;
+$plan-width: 190px;
+$plan-width-callout: $plan-width + 10px;
+$plan-padding: 35px;
+$plan-header-height: 59px;
+$plan-max-width: 960px;
+$video-states: (
+  unstarted: play,
+  in-progress: in-progress,
+  complete: complete,
+);
+
+// Animations
+$flashcard-transition: all 0.25s $ease-in-quad;
+$fast-transition: all 0.15s ease-in-out;
+
+// Shadows
+$base-box-shadow: 1px 1px 2px rgba($black, 0.08);
+$heavy-box-shadow: 0 1px 3px rgba($black, 0.2);
+
+// Unicode characters
+$unicode-left-double-quote: "\201C";
+$unicode-right-double-quote: "\201D";
+$unicode-left-single-quote: "\2018";
+$unicode-right-single-quote: "\2019";
+
+// Screen sizes
+$small-screen: 420px;
+$x-large-screen: 1300px;
+
+// Layout sizes
+$max-width: 1024px;
+$max-width-narrow: 900px;
+$max-width-narrower: 760px;
+$navigation-height: 60px;
+$navigation-cta-offset: 10px;
+$header-height: $navigation-height - ($navigation-cta-offset * 2);
+
+// Z indexes
+$z-flashcard-deck: -1;
+$z-header: 20;
+$z-hero: 10;
+$z-headhesive: 30;
+$z-table-of-contents: 19;
+$z-table-of-contents--mobile: 31;

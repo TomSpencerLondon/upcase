@@ -1,0 +1,25 @@
+.table-of-contents-toggle {
+  &::after {
+    content: $unicode-down-triangle;
+    display: inline-block;
+    margin-left: 6px;
+    position: relative;
+    transition: transform $base-duration;
+  }
+
+  &.is-open {
+    background: rgba($black, 0.12);
+
+    @media (min-width: $medium-screen) {
+      border-radius: 3px;
+      margin: -($spacing-small);
+      margin-left: 0;
+      padding: $spacing-small;
+    }
+
+    &::after {
+      top: 2px;
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,85 @@
+// Colors
+$azure: #f3fcff;
+$bees-wax: #fcf5c8;
+$blue-chalk: #f8eaff;
+$chillean-heath: #ffffe6;
+$egyptian-blue: #1736a4;
+$fair-pink: #ffecee;
+$glitter: #e8e9ff;
+$grey-chateau: #a4a4a4;
+$hacienda: #9b8f11;
+$hawkes-blue: #d7ecff;
+$linen: #ffeee4;
+$pattens-blue: #e1f5ff;
+$polar: #e5fdf4;
+$sandy-beach: #ffe8ca;
+$tapas-pink: #fcf8f8;
+$tapas-salmon: #ff4340;
+$tranquil: #e5feff;
+$tutu: #ffe9fd;
+$united-nations-blue: #698fe1;
+$upcase-light-blue: #fbfcff;
+$zicron: #f4faff;
+
+// Colors in action
+$category-clean-code-color: $tranquil;
+$category-design-color: $glitter;
+$category-elixir-color: $blue-chalk;
+$category-git-color: $bees-wax;
+$category-haskel-color: $tutu;
+$category-ios-color: $hawkes-blue;
+$category-javascript-color: $sandy-beach;
+$category-react-color: $azure;
+$category-ruby-on-rails-color: $fair-pink;
+$category-swift-color: $linen;
+$category-testing-color: $polar;
+$category-tmux-color: $bees-wax;
+$category-vim-color: $pattens-blue;
+$light-font-color: $grey-chateau;
+$marketing-heading-font-color: $blue;
+
+// Font sizes
+$medium-font-size: 1.7rem;
+$large-font-size: 2.2rem;
+
+// Spacing
+$x-small-spacing: 0.25rem;
+$small-spacing: 0.5rem;
+$base-spacing: 1rem;
+$large-spacing: 3.75rem;
+$x-large-spacing: 6rem;
+
+// Z-index
+$z-flashes: 30;
+$z-base: 1;
+$z-modal: 25;
+
+// Borders
+$base-border: 1px solid darken($upcase-light-blue, 3%);
+
+// Shadows
+$base-content-shadow: 0 0.5rem 1.5rem rgba($havelock-blue, 0.2);
+$dark-content-shadow: 0 0.5rem 2.5rem $color-red-darker;
+
+// Component specific
+$dark-button-shadow: 0 0 0.75rem $color-red-darker;
+$modal-content-shadow: 0 0 5rem $color-red-darker;
+$notice-color: $bees-wax;
+
+// Category Colors
+$category-color-list: (
+  "clean-code": $category-clean-code-color,
+  "design": $category-design-color,
+  "elixir" : $category-elixir-color,
+  "git": $category-git-color,
+  "haskell": $category-haskel-color,
+  "ios": $category-ios-color,
+  "javascript": $category-javascript-color,
+  "python" : $category-python-color,
+  "react" : $category-react-color,
+  "ruby-on-rails": $category-ruby-on-rails-color,
+  "swift" : $category-swift-color,
+  "testing": $category-testing-color,
+  "tmux": $category-tmux-color,
+  "vim": $category-vim-color,
+);

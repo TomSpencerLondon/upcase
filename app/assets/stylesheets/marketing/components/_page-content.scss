@@ -1,0 +1,74 @@
+.page-content {
+  margin: 0 auto;
+  max-width: $large-screen;
+  padding: $large-spacing $base-spacing;
+
+  @media (min-width: $medium-screen) {
+    @include padding($x-large-spacing null);
+  }
+
+  + .page-content {
+    padding-top: 0;
+  }
+}
+
+.page-content--tight {
+  @include padding(0 null);
+}
+
+.page-content--centered {
+  @media (min-width: $small-screen) {
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.page-content--interstitial {
+  @include padding(0 null);
+  margin: -($large-spacing) auto 0;
+
+  @media (min-width: $medium-screen) {
+    margin-top: -$x-large-spacing;
+  }
+}
+
+.page-content--reading {
+  @include padding(null $medium-spacing);
+  max-width: $reading-width;
+
+  @media (min-width: $medium-screen) {
+    @include padding(null 0);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: $medium-spacing 0;
+  }
+
+  p {
+    margin-bottom: $base-spacing;
+  }
+}
+
+.page-content__heading {
+  color: $color-red;
+  display: block;
+  font-family: $heading-font-family;
+  font-size: $medium-font-size;
+  font-weight: normal;
+  margin: 0 auto $base-spacing;
+  max-width: $reading-width;
+  text-align: center;
+}
+
+.page-content__intro {
+  color: $light-font-color;
+  margin: 0 auto $medium-spacing;
+  max-width: $reading-width;
+  text-align: center;
+}
